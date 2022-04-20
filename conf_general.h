@@ -1,5 +1,5 @@
 /*
-	Copyright 2017 - 2022 Benjamin Vedder	benjamin@vedder.se
+	Copyright 2017 - 2021 Benjamin Vedder	benjamin@vedder.se
 
 	This file is part of the VESC firmware.
 
@@ -24,7 +24,7 @@
 #define FW_VERSION_MAJOR			6
 #define FW_VERSION_MINOR			00
 // Set to 0 for building a release and iterate during beta test builds
-#define FW_TEST_VERSION_NUMBER		7
+#define FW_TEST_VERSION_NUMBER		5
 
 #include "datatypes.h"
 
@@ -60,11 +60,11 @@
 //#define HW_SOURCE "hw_48.c"
 //#define HW_HEADER "hw_48.h"
 
-//#define HW_SOURCE "hw_49.c"
-//#define HW_HEADER "hw_49.h"
+// #define HW_SOURCE "hw_49.c"
+// #define HW_HEADER "hw_49.h"
 
-//#define HW_SOURCE "hw_410.c" // Also for 4.11 and 4.12
-//#define HW_HEADER "hw_410.h" // Also for 4.11 and 4.12
+#define HW_SOURCE "hw_410.c" // Also for 4.11 and 4.12
+#define HW_HEADER "hw_410.h" // Also for 4.11 and 4.12
 
 //#define HW_SOURCE "hw_gesc.c"
 //#define HW_HEADER "hw_gesc.h"
@@ -172,7 +172,6 @@
 //#define HW_SOURCE "hw_Little_FOCer.c"
 //#define HW_HEADER "hw_Little_FOCer.h"
 
-//#define HW_100_500_VER_75_600
 //#define HW_SOURCE "hw_100_500.c"
 //#define HW_HEADER "hw_100_500.h"
 
@@ -187,9 +186,6 @@
 
 //#define HW_SOURCE "hw_60v2_alva.c"
 //#define HW_HEADER "hw_60v2_alva.h"
-
-//#define HW_SOURCE "hw_60_75.c"
-//#define HW_HEADER "hw_60_75.h"
 #endif
 
 #ifndef HW_SOURCE
