@@ -39,7 +39,7 @@
 //#define AS5047_USE_HW_SPI_PINS		1
 
 // Disable hardware limits on configuration parameters
-//#define DISABLE_HW_LIMITS
+#define DISABLE_HW_LIMITS
 
 /*
  * Select only one hardware version, if it is not passed
