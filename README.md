@@ -12,6 +12,24 @@ An open source motor controller firmware.
 
 This is the source code for the VESC DC/BLDC/FOC controller. Read more at
 [https://vesc-project.com/](https://vesc-project.com/)
+****
+
+## UT AUTOmata Instructions
+This is the latest (unstable) version of the vesc_firmware modified for the vesc board on the UT AUTOmata. You need the [vesc_tool](https://github.com/ut-amrl/vesc_tool) software for flashing the firmware built using this repo. At the time of writing this, there exist issues with the latest version of the vesc_tool that prevent read/write of motor configuration parameters from the application. 
+
+### Latest Release Version of the Firmware
+Please build the firmware from the [branch](https://github.com/ut-amrl/vesc_firmware/tree/fw_v3.62_amrl) `fw_v3.62_amrl` of this repo or the tag `fw_v3.62_release`. A prebuilt binary is available [here](https://drive.google.com/file/d/19IRzOpWpyRCrwUad4UojuhTwbp-ipjnE/view?usp=sharing).
+
+### Latest Stable Version of the Firmware with No Hardware Limits
+**WARNING**: This version of the firmware removes all hardware limits applied at the firmware level. Please make sure the firmware is only used on cars used for research.
+
+In order to build the version with no hardware limits, build the repo from the the [branch](https://github.com/ut-amrl/vesc_firmware/tree/fw_v3.62_amrl_no_hw_limits) `fw_v3.62_amrl_no_hw_limits` or the tag `fw_v3.62_no_hw_limit`. A prebuilt binary is available [here](https://drive.google.com/file/d/1rIxYiRZ6puXe3lWhtUADeft1b7U0gQTS/view?usp=sharing).
+
+
+### Flashing the VESC Board
+In order to flash the UT-AUTOmata VESC board with the latest stable versions of the Firmware, build the [vesc_tool](https://github.com/ut-amrl/vesc_tool) software from the branch with the same name as that of the vesc firmware, i.e. for fw_v3.62, build [this branch](https://github.com/ut-amrl/vesc_tool/tree/fw_v3.62_amrl) or [this tag](https://github.com/ut-amrl/vesc_tool/releases/tag/fw_v3.**62_release**).
+
+**NOTE**:Once you have the firmware binary. You need to use a version of the vesc_tool that is explicitly compatible with that firmware version. Using either older or newer versions of the vesc-tool leads to issues either with flashing the VESC board or reading/writing the motor configuration parameters after flashing the board. 
 
 ## Supported boards
 
