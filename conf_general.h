@@ -61,14 +61,14 @@
 //#define HW_SOURCE "hw_49.c"
 //#define HW_HEADER "hw_49.h"
 
-//#define HW_SOURCE "hw_410.c" // Also for 4.11 and 4.12
-//#define HW_HEADER "hw_410.h" // Also for 4.11 and 4.12
+#define HW_SOURCE "hw_410.c" // Also for 4.11 and 4.12
+#define HW_HEADER "hw_410.h" // Also for 4.11 and 4.12
 
 // Benjamins first HW60 PCB with PB5 and PB6 swapped
 //#define HW60_VEDDER_FIRST_PCB
 
-#define HW_SOURCE "hw_60.c"
-#define HW_HEADER "hw_60.h"
+// #define HW_SOURCE "hw_60.c"
+// #define HW_HEADER "hw_60.h"
 
 //#define HW_SOURCE "hw_r2.c"
 //#define HW_HEADER "hw_r2.h"
@@ -203,7 +203,7 @@
  * Servo output driver
  */
 #ifndef SERVO_OUT_ENABLE
-#define SERVO_OUT_ENABLE			0		// Enable servo output
+#define SERVO_OUT_ENABLE			1		// Enable servo output
 #endif
 #define SERVO_OUT_PULSE_MIN_US		1000	// Minimum pulse length in microseconds
 #define SERVO_OUT_PULSE_MAX_US		2000	// Maximum pulse length in microseconds

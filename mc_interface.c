@@ -1694,7 +1694,7 @@ static void update_override_limits(volatile mc_configuration *conf) {
 	const float v_in = GET_INPUT_VOLTAGE();
 	const float rpm_now = mc_interface_get_rpm();
 
-	UTILS_LP_FAST(m_temp_fet, NTC_TEMP(ADC_IND_TEMP_MOS), 0.1);
+	UTILS_LP_FAST(m_temp_fet, NTC_TEMP(ADC_IND_TEMP_MOS), 0.01);
 	UTILS_LP_FAST(m_temp_motor, NTC_TEMP_MOTOR(conf->m_ntc_motor_beta), 0.1);
 #ifdef HW_VERSION_AXIOM
 	UTILS_LP_FAST(m_gate_driver_voltage, GET_GATE_DRIVER_SUPPLY_VOLTAGE(), 0.01);
